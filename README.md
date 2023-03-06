@@ -28,7 +28,7 @@ Projekt mora sadržavati minimalno 8 funkcionalnih zahtjeva.Unutar tih 8 zahtjev
 nefunkcionalna zahtjeva.Unutar ta 2 nefunkcionalna zahtjeva mora se nalaziti minimalno 1 zahtjev u domeni izgleda softvera i 1 zahtjev u bilo kojoj drugoj domeni.
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+https://github.com/foivz/pi2023-zadace-pknezovic21/blob/master/Zadatak%20-%20Kadrovska.pdf
 
 ## Resursi
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
