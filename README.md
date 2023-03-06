@@ -7,22 +7,25 @@ Molim vas izmijenite ovaj dokument kako biste u njemu naveli naziv i kratak opis
 
 A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vašeg programskog proizvoda molimo vas koristite **predložak** koji je naveden u nastavku. Započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta te izbrišite sve što je iznad _Naziva projekta_, kao i sve upute koje su navedene u zagradama u predlošku ispod.
 
-# Naziv projekta
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
+# Korisnički zahtjevi za Softver Kadrovska služba u IT poduzeću
+
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+
+Ime i prezime  |     E-mail adresa (FOI)    |   JMBAG    | Github korisničko ime
+-------------- | ---------------------------| ---------- | ---------------------
+Petar Knezović | pknezovic21@student.foi.hr | 0069088496 | pknezovic21
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Potrebno je izraditi odgovarajući softwer koji će radnicima spomenute IT kompanije omogućiti slanje zahtjeva za usavršavanje, zahtjeve za godišnji odmorom,
+slobodnim danima te službenim putovanjima. Softwer će olakšati evidenciju prisustva i odsustva djelatnika unutar IT kompanije.
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+Projekt mora sadržavati minimalno 8 funkcionalnih zahtjeva.Unutar tih 8 zahtjeva također mora sadržavati minimalno 1 zahtjev u domeni prikaza dohvaćenih podataka, 
+1 zahtjev u domeni unosa podataka, 1 zahtjev u domeni izrade izvještaja te 1 zahtjev u domeni prikaza statističkih podataka. Projekt također mora sadržavati 2
+nefunkcionalna zahtjeva.Unutar ta 2 nefunkcionalna zahtjeva mora se nalaziti minimalno 1 zahtjev u domeni izgleda softvera i 1 zahtjev u bilo kojoj drugoj domeni.
 
 ## Zadatak
 (U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
