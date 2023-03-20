@@ -24,8 +24,5 @@ nefunkcionalna zahtjeva.Unutar ta 2 nefunkcionalna zahtjeva mora se nalaziti min
 https://github.com/foivz/pi2023-zadace-pknezovic21/blob/master/Zadatak%20-%20Kadrovska.pdf
 
 ## Resursi
-(Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
-
-Svi resursi nalaze se u mapi _Documentation_.
 
 https://github.com/foivz/pi2023-zadace-pknezovic21/wiki
