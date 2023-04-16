@@ -1,4 +1,27 @@
 Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaciji na svojim wiki stranicama. 
+
+![dijagram_klasa_kreiranje_zahtjeva](https://user-images.githubusercontent.com/126589852/232339776-b29cd2c7-eab2-422e-af7c-7f0d7e7ae158.jpg)
+
+![dijagram_klasa_ukupno](https://user-images.githubusercontent.com/126589852/232339782-b61ae4d5-57d2-40c8-bfee-53b6985cd172.jpg)
+
+![era_dijagram](https://user-images.githubusercontent.com/126589852/232339786-53e88ed3-057e-4d14-8b55-4fe0499e66c9.jpg)
+
+
+![dijagram_klasa_prijava](https://user-images.githubusercontent.com/126589852/232339791-c17d97c1-ebab-4dfe-b0f1-1a32e17f07c0.jpg)
+
+
+![dijagram_slijeda_glavni_prijava](https://user-images.githubusercontent.com/126589852/232339797-5b394670-132f-4caf-b10f-9a5ab8fb434d.jpg)
+
+![dijagram_aktivnosti_glavni_prijava](https://user-images.githubusercontent.com/126589852/232339819-e33b428f-ca5d-49ba-8136-f85e46371d00.jpg)
+
+![Use case1](https://user-images.githubusercontent.com/126589852/232339822-a7431d34-55e8-4ee6-98bb-694a643f8842.jpg)
+
+![dijagram_slijeda_glavni_kreiranje_forme](https://user-images.githubusercontent.com/126589852/232339831-c926bfa6-600b-41ef-b584-5f80889df66e.jpg)
+
+![dijagram_aktivnosti_glavni_kreiranje_zahtjeva](https://user-images.githubusercontent.com/126589852/232339851-9e91abf7-da71-422e-84ae-9fe53735f335.jpg)
+
+
+
 ![drugi_a](https://user-images.githubusercontent.com/126589852/226219410-22571f6f-c064-44bc-a0d9-9e8c0f822ffc.png)
 ![druga_b](https://user-images.githubusercontent.com/126589852/226219428-1a9b4932-08d9-48f5-9cf9-72b430f0c3b5.png)
 ![tri_a](https://user-images.githubusercontent.com/126589852/226219437-f5f57384-0df2-41fa-b757-cfd39a29d656.png)
