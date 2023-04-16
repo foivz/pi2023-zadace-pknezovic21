@@ -12,7 +12,8 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 
 ![dijagram_slijeda_glavni_prijava](https://user-images.githubusercontent.com/126589852/232339797-5b394670-132f-4caf-b10f-9a5ab8fb434d.jpg)
 
-![dijagram_aktivnosti_glavni_prijava](https://user-images.githubusercontent.com/126589852/232339819-e33b428f-ca5d-49ba-8136-f85e46371d00.jpg)
+![dijagram_aktivnosti_glavni_prijava](https://user-images.githubusercontent.com/126589852/232344170-d916e7ab-b810-477e-a438-a4b39a35ff18.jpg)
+
 
 ![Use case1](https://user-images.githubusercontent.com/126589852/232340608-77575509-58ab-47e8-b16c-ea299e4d8f82.jpg)
 
