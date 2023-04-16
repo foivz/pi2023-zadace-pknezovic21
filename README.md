@@ -25,4 +25,4 @@ https://github.com/foivz/pi2023-zadace-pknezovic21/blob/master/Zadatak%20-%20Kad
 
 ## Resursi
 
-https://github.com/foivz/pi2023-zadace-pknezovic21/wiki
+https://github.com/foivz/pi2023-zadace-pknezovic21/wiki/Specifikacija-dizajna-programskog-proizvoda
