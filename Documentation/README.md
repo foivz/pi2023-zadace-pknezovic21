@@ -3,7 +3,8 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 
 ![era_finalni](https://user-images.githubusercontent.com/126589852/233189324-9135fae9-d502-4e6b-8e89-4bd60a5549d9.jpg)
 
-![ukupni_classito](https://user-images.githubusercontent.com/126589852/233201165-271e6d87-ea6d-41ca-822f-a569474ffce2.jpg)
+
+![ukupni_classito](https://user-images.githubusercontent.com/126589852/233207958-5037c540-9374-44f2-b27f-7e00c580e9b3.jpg)
 
 
 
@@ -14,7 +15,8 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 
 ![dijagram_aktivnosti_jedini_izvjestaj](https://user-images.githubusercontent.com/126589852/233189454-056fdc11-78ec-4574-a392-275646705ec4.jpg)
 
-![dijagram_klasa_izvjestaj](https://user-images.githubusercontent.com/126589852/233201364-e718460c-5fed-49b8-aece-365e9743ccf5.jpg)
+
+![dijagram_klasa_izvjestaj](https://user-images.githubusercontent.com/126589852/233208001-c8f25d6f-e6d5-477f-ae2e-d9b03d6f02d8.jpg)
 
 
 
