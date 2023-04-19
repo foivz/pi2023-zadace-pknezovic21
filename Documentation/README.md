@@ -1,21 +1,35 @@
 Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaciji na svojim wiki stranicama. 
 
-![dijagram_klasa_kreiranje_zahtjeva](https://user-images.githubusercontent.com/126589852/232339776-b29cd2c7-eab2-422e-af7c-7f0d7e7ae158.jpg)
+
 
 ![dijagram_klasa_ukupno](https://user-images.githubusercontent.com/126589852/232339782-b61ae4d5-57d2-40c8-bfee-53b6985cd172.jpg)
 
-![era_dijagram](https://user-images.githubusercontent.com/126589852/232339786-53e88ed3-057e-4d14-8b55-4fe0499e66c9.jpg)
+![era_finalni](https://user-images.githubusercontent.com/126589852/233189324-9135fae9-d502-4e6b-8e89-4bd60a5549d9.jpg)
 
-
-![dijagram_klasa_prijava](https://user-images.githubusercontent.com/126589852/232339791-c17d97c1-ebab-4dfe-b0f1-1a32e17f07c0.jpg)
-
-
-![dijagram_slijeda_glavni_prijava](https://user-images.githubusercontent.com/126589852/232339797-5b394670-132f-4caf-b10f-9a5ab8fb434d.jpg)
 
 ![dijagram_aktivnosti_glavni_prijava](https://user-images.githubusercontent.com/126589852/232344170-d916e7ab-b810-477e-a438-a4b39a35ff18.jpg)
 
 
-![Use case1](https://user-images.githubusercontent.com/126589852/232340608-77575509-58ab-47e8-b16c-ea299e4d8f82.jpg)
+![Use case1](https://user-images.githubusercontent.com/126589852/233189408-e9a2f775-b91a-4d44-a215-4539e61ab95d.jpg)
+
+![dijagram_slijeda_statistika](https://user-images.githubusercontent.com/126589852/233189439-89cbee7d-3515-4963-9562-37a59034f3fa.jpg)
+
+
+![dijagram_aktivnosti_jedini_izvjestaj](https://user-images.githubusercontent.com/126589852/233189454-056fdc11-78ec-4574-a392-275646705ec4.jpg)
+
+
+![sesti_a](https://user-images.githubusercontent.com/126589852/233189524-dd806a4f-56b7-4ced-baa1-c4cb99fe4fa4.png)
+
+
+
+![sesti_b](https://user-images.githubusercontent.com/126589852/233189554-f6cb6db1-d4ce-4aa2-ad1a-246b2ba905ac.png)
+
+
+![sesti_c](https://user-images.githubusercontent.com/126589852/233189577-1070159d-d587-4a95-8595-dde57387e396.png)
+
+
+
+
 
 
 ![dijagram_slijeda_glavni_kreiranje_forme2](https://user-images.githubusercontent.com/126589852/232339934-76be66cd-a7fc-4186-bfa8-5dfe5659728c.jpg)
