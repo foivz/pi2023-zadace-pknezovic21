@@ -1,13 +1,10 @@
 Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaciji na svojim wiki stranicama. 
 
 
-
-![dijagram_klasa_ukupno](https://user-images.githubusercontent.com/126589852/232339782-b61ae4d5-57d2-40c8-bfee-53b6985cd172.jpg)
-
 ![era_finalni](https://user-images.githubusercontent.com/126589852/233189324-9135fae9-d502-4e6b-8e89-4bd60a5549d9.jpg)
 
+![ukupni_classito](https://user-images.githubusercontent.com/126589852/233201165-271e6d87-ea6d-41ca-822f-a569474ffce2.jpg)
 
-![dijagram_aktivnosti_glavni_prijava](https://user-images.githubusercontent.com/126589852/232344170-d916e7ab-b810-477e-a438-a4b39a35ff18.jpg)
 
 
 ![Use case1](https://user-images.githubusercontent.com/126589852/233189408-e9a2f775-b91a-4d44-a215-4539e61ab95d.jpg)
@@ -16,6 +13,10 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 
 
 ![dijagram_aktivnosti_jedini_izvjestaj](https://user-images.githubusercontent.com/126589852/233189454-056fdc11-78ec-4574-a392-275646705ec4.jpg)
+
+![dijagram_klasa_izvjestaj](https://user-images.githubusercontent.com/126589852/233201364-e718460c-5fed-49b8-aece-365e9743ccf5.jpg)
+
+
 
 
 ![sesti_a](https://user-images.githubusercontent.com/126589852/233189524-dd806a4f-56b7-4ced-baa1-c4cb99fe4fa4.png)
@@ -29,6 +30,7 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 
 
 
+![dijagram_klasa_kreiranje_zahtjeva](https://user-images.githubusercontent.com/126589852/233201656-50eb2e8f-3726-4b13-8e49-a5e06d875510.jpg)
 
 
 
