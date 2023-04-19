@@ -37,7 +37,7 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 ![dijagram_slijeda_glavni_kreiranje_forme2](https://user-images.githubusercontent.com/126589852/232339934-76be66cd-a7fc-4186-bfa8-5dfe5659728c.jpg)
 
 
-![dijagram_aktivnosti_glavni_kreiranje_zahtjeva](https://user-images.githubusercontent.com/126589852/232339851-9e91abf7-da71-422e-84ae-9fe53735f335.jpg)
+![dijagram_aktivnosti_glavni_kreiranje_zahtjeva](https://user-images.githubusercontent.com/126589852/233203412-2334a1b4-1354-49ea-a70e-e0d1a026e430.jpg)
 
 
 
