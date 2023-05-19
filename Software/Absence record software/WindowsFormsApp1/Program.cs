@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace WindowsFormsApp1 {
         /// </summary>
         [STAThread]
         static void Main() {
+            DB.SetConfiguration("IPS23_pknezovic21", "pknezovic21", "kwsFK)Rt");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
