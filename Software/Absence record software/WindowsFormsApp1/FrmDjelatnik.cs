@@ -15,6 +15,10 @@ namespace WindowsFormsApp1 {
         public FrmDjelatnik(Korisnik korisnik) {
             InitializeComponent();
             ulogiraniKorisnik = korisnik;
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
 
@@ -23,6 +27,13 @@ namespace WindowsFormsApp1 {
             FrmPopisZahtjeva form = new FrmPopisZahtjeva(ulogiraniKorisnik);
             Hide();
             form.ShowDialog();
+            Close();
+        }
+
+        private void btnOdjava_Click(object sender, EventArgs e) {
+            FrmLogin frmPrijava = new FrmLogin();
+            Hide();
+            frmPrijava.ShowDialog();
             Close();
         }
     }

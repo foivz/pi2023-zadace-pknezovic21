@@ -29,7 +29,7 @@
             // 
             // btnZahtjevi
             // 
-            this.btnZahtjevi.Location = new System.Drawing.Point(67, 24);
+            this.btnZahtjevi.Location = new System.Drawing.Point(130, 27);
             this.btnZahtjevi.Name = "btnZahtjevi";
             this.btnZahtjevi.Size = new System.Drawing.Size(182, 32);
             this.btnZahtjevi.TabIndex = 2;
@@ -39,18 +39,19 @@
             // 
             // btnOdjava
             // 
-            this.btnOdjava.Location = new System.Drawing.Point(67, 82);
+            this.btnOdjava.Location = new System.Drawing.Point(130, 85);
             this.btnOdjava.Name = "btnOdjava";
             this.btnOdjava.Size = new System.Drawing.Size(182, 32);
             this.btnOdjava.TabIndex = 3;
             this.btnOdjava.Text = "Odjavi se";
             this.btnOdjava.UseVisualStyleBackColor = true;
+            this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
             // 
             // FrmDjelatnik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 207);
+            this.ClientSize = new System.Drawing.Size(446, 264);
             this.Controls.Add(this.btnOdjava);
             this.Controls.Add(this.btnZahtjevi);
             this.Name = "FrmDjelatnik";
