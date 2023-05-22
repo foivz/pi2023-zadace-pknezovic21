@@ -16,5 +16,7 @@ namespace WindowsFormsApp1.Models {
         public override string ToString() {
             return Ime + " " + Prezime;
         }
+
+      
     }
 }

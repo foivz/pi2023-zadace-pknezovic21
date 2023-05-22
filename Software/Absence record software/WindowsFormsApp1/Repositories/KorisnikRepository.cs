@@ -18,6 +18,11 @@ namespace WindowsFormsApp1.Repositories {
             return Dohvati(sql);
         }
 
+        public static Korisnik DohvatiId(string email) {
+            string sql = $"SELECT IdKorisnika FROM Korisnik WHERE Email = '{email}'";
+            return Dohvati(sql);
+        }
+
         private static Korisnik Dohvati(string sql) {
 
             DB.OpenConnection();
