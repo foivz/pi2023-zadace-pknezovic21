@@ -12,5 +12,9 @@ namespace WindowsFormsApp1.Models {
         public string Lozinka { get; set; }
         public string Email { get; set; }
         public int IdUloge { get; set; }
+
+        public override string ToString() {
+            return Ime + " " + Prezime;
+        }
     }
 }
