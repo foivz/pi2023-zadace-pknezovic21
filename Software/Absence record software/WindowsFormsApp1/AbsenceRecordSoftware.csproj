@@ -68,11 +68,11 @@
     <Compile Include="Repositories\UlogaRepository.cs" />
     <Compile Include="Repositories\VrstaZahtjevaRepository.cs" />
     <Compile Include="Repositories\ZahtjevRepository.cs" />
-    <Compile Include="testna.cs">
+    <Compile Include="KreirajZahtjev.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="testna.Designer.cs">
-      <DependentUpon>testna.cs</DependentUpon>
+    <Compile Include="KreirajZahtjev.Designer.cs">
+      <DependentUpon>KreirajZahtjev.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -86,8 +86,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="testna.resx">
-      <DependentUpon>testna.cs</DependentUpon>
+    <EmbeddedResource Include="KreirajZahtjev.resx">
+      <DependentUpon>KreirajZahtjev.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
