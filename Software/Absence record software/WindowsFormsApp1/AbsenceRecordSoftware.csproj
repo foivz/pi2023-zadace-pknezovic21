@@ -83,7 +83,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\KorisnikRepository.cs" />
     <Compile Include="Repositories\StatusZahtjevaRepository.cs" />
-    <Compile Include="Repositories\UlogaRepository.cs" />
     <Compile Include="Repositories\VrstaZahtjevaRepository.cs" />
     <Compile Include="Repositories\ZahtjevRepository.cs" />
     <Compile Include="FrmKreirajZahtjev.cs">

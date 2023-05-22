@@ -109,5 +109,9 @@ namespace WindowsFormsApp1 {
             Close();
             VratiPopis();
         }
+
+        private void cmbVrsta_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
     }
 }

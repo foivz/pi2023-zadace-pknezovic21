@@ -70,10 +70,11 @@
             // cmbVrsta
             // 
             this.cmbVrsta.FormattingEnabled = true;
-            this.cmbVrsta.Location = new System.Drawing.Point(498, 46);
+            this.cmbVrsta.Location = new System.Drawing.Point(498, 49);
             this.cmbVrsta.Name = "cmbVrsta";
             this.cmbVrsta.Size = new System.Drawing.Size(121, 24);
             this.cmbVrsta.TabIndex = 4;
+            this.cmbVrsta.SelectedIndexChanged += new System.EventHandler(this.cmbVrsta_SelectedIndexChanged);
             // 
             // label3
             // 
