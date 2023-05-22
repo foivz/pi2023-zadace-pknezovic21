@@ -94,5 +94,12 @@ namespace WindowsFormsApp1 {
 
             dgvZahtjevi.Rows[0].Selected = true;
         }
+
+        private void btnPocetna_Click(object sender, EventArgs e) {
+            FrmManager novaForma = new FrmManager(ulogiraniKorisnik);
+            Hide();
+            novaForma.ShowDialog();
+            Close();
+        }
     }
 }

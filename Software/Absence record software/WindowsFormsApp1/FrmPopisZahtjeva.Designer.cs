@@ -29,6 +29,7 @@
             this.btnAžuriraj = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtOpis = new System.Windows.Forms.TextBox();
+            this.btnPocetna = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +89,22 @@
             this.txtOpis.TabIndex = 5;
             this.txtOpis.TextChanged += new System.EventHandler(this.txtOpis_TextChanged);
             // 
+            // btnPocetna
+            // 
+            this.btnPocetna.Location = new System.Drawing.Point(12, 587);
+            this.btnPocetna.Name = "btnPocetna";
+            this.btnPocetna.Size = new System.Drawing.Size(133, 34);
+            this.btnPocetna.TabIndex = 6;
+            this.btnPocetna.Text = "Natrag";
+            this.btnPocetna.UseVisualStyleBackColor = true;
+            this.btnPocetna.Click += new System.EventHandler(this.btnPocetna_Click);
+            // 
             // FrmPopisZahtjeva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 633);
+            this.Controls.Add(this.btnPocetna);
             this.Controls.Add(this.txtOpis);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAžuriraj);
@@ -116,5 +128,6 @@
         private System.Windows.Forms.Button btnAžuriraj;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtOpis;
+        private System.Windows.Forms.Button btnPocetna;
     }
 }

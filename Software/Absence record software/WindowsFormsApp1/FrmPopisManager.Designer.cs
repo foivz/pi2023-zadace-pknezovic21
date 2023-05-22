@@ -26,6 +26,7 @@
             this.dgvZahtjevi = new System.Windows.Forms.DataGridView();
             this.btnOdbij = new System.Windows.Forms.Button();
             this.btnOdobri = new System.Windows.Forms.Button();
+            this.btnPocetna = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,16 +59,27 @@
             this.btnOdobri.UseVisualStyleBackColor = true;
             this.btnOdobri.Click += new System.EventHandler(this.btnOdobri_Click);
             // 
+            // btnPocetna
+            // 
+            this.btnPocetna.Location = new System.Drawing.Point(12, 591);
+            this.btnPocetna.Name = "btnPocetna";
+            this.btnPocetna.Size = new System.Drawing.Size(133, 34);
+            this.btnPocetna.TabIndex = 10;
+            this.btnPocetna.Text = "Natrag";
+            this.btnPocetna.UseVisualStyleBackColor = true;
+            this.btnPocetna.Click += new System.EventHandler(this.btnPocetna_Click);
+            // 
             // FrmPopisManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 662);
+            this.Controls.Add(this.btnPocetna);
             this.Controls.Add(this.btnOdobri);
             this.Controls.Add(this.btnOdbij);
             this.Controls.Add(this.dgvZahtjevi);
             this.Name = "FrmPopisManager";
-            this.Text = "FrmPopisManager";
+            this.Text = "Popis zahtjeva ";
             this.Load += new System.EventHandler(this.FrmPopisManager_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvZahtjevi)).EndInit();
             this.ResumeLayout(false);
@@ -79,5 +91,6 @@
         private System.Windows.Forms.DataGridView dgvZahtjevi;
         private System.Windows.Forms.Button btnOdbij;
         private System.Windows.Forms.Button btnOdobri;
+        private System.Windows.Forms.Button btnPocetna;
     }
 }
