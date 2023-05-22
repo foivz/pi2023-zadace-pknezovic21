@@ -11,7 +11,7 @@ namespace WindowsFormsApp1.Repositories {
 
         public static StatusZahtjeva DohvatiStatus(int id) {
             StatusZahtjeva status = null;
-            string sql = $"SELECT * FROM StatusZahtjeva WHERE Id = {id}";
+            string sql = $"SELECT * FROM StatusZahtjeva WHERE IdStatusaZahtjeva = {id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows) {
@@ -25,7 +25,7 @@ namespace WindowsFormsApp1.Repositories {
 
         }
 
-        public static List<StatusZahtjeva> DohvatiIzvore() {
+        public static List<StatusZahtjeva> DohvatiStatuse() {
             List<StatusZahtjeva> statusi = new List<StatusZahtjeva>();
             string sql = "SELECT * FROM StatusZahtjeva";
             DB.OpenConnection();
