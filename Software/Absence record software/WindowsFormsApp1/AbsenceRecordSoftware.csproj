@@ -56,6 +56,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\StatusZahtjeva.cs" />
+    <Compile Include="Models\Uloga.cs" />
+    <Compile Include="Models\VrstaZahtjeva.cs" />
+    <Compile Include="Models\Zahtjev.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
