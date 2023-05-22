@@ -65,6 +65,8 @@ namespace WindowsFormsApp1 {
             dgvZahtjevi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
 
             dgvZahtjevi.DataSource = tablica;
+
+            dgvZahtjevi.Rows[0].Selected = true;
         }
 
         private void btnKreiraj_Click(object sender, EventArgs e) {
@@ -91,6 +93,24 @@ namespace WindowsFormsApp1 {
             } else {
                 MessageBox.Show("Niste izabrali zahtjev", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnIzbriši_Click(object sender, EventArgs e) {
+            if (dgvZahtjevi.SelectedRows.Count > 0) {
+
+                int selektiraniIndex = dgvZahtjevi.SelectedCells[0].RowIndex;
+                DataGridViewRow red = dgvZahtjevi.Rows[selektiraniIndex];
+                int vrijednostIda = (int)red.Cells["Broj zahtjeva"].Value;
+                var izabraniZahtjev = ZahtjevRepository.DohvatiZahtjevPremaId(vrijednostIda);
+                if(izabraniZahtjev != null) {
+                    ZahtjevRepository.ObrišiZahtjev(izabraniZahtjev);
+                } else {
+                    MessageBox.Show("Došlo je do pogreške", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } else {
+                MessageBox.Show("Niste izabrali zahtjev", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            OsvjeziZahtjeve();
         }
     }
 }

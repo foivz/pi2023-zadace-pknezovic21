@@ -86,9 +86,9 @@
             // 
             // btnPodnesi
             // 
-            this.btnPodnesi.Location = new System.Drawing.Point(498, 110);
+            this.btnPodnesi.Location = new System.Drawing.Point(498, 106);
             this.btnPodnesi.Name = "btnPodnesi";
-            this.btnPodnesi.Size = new System.Drawing.Size(121, 23);
+            this.btnPodnesi.Size = new System.Drawing.Size(121, 36);
             this.btnPodnesi.TabIndex = 6;
             this.btnPodnesi.Text = "Podnesi zahtjev";
             this.btnPodnesi.UseVisualStyleBackColor = true;
@@ -96,9 +96,9 @@
             // 
             // btnOdustani
             // 
-            this.btnOdustani.Location = new System.Drawing.Point(344, 110);
+            this.btnOdustani.Location = new System.Drawing.Point(344, 106);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(121, 23);
+            this.btnOdustani.Size = new System.Drawing.Size(121, 36);
             this.btnOdustani.TabIndex = 7;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;

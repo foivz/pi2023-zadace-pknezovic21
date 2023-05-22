@@ -125,5 +125,12 @@ namespace WindowsFormsApp1.Repositories {
             DB.CloseConnection();
         }
 
+        public static void ObrišiZahtjev(Zahtjev zahtjev) {
+            string sql = $"Delete Zahtjev WHERE Idzahtjeva = '{zahtjev.IdZahtjeva}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }

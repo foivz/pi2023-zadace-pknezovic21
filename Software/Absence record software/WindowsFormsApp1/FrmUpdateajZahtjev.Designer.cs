@@ -37,7 +37,7 @@
             // 
             this.btnOdustani.Location = new System.Drawing.Point(312, 97);
             this.btnOdustani.Name = "btnOdustani";
-            this.btnOdustani.Size = new System.Drawing.Size(121, 23);
+            this.btnOdustani.Size = new System.Drawing.Size(121, 36);
             this.btnOdustani.TabIndex = 15;
             this.btnOdustani.Text = "Odustani";
             this.btnOdustani.UseVisualStyleBackColor = true;
@@ -47,7 +47,7 @@
             // 
             this.btnPodnesi.Location = new System.Drawing.Point(466, 97);
             this.btnPodnesi.Name = "btnPodnesi";
-            this.btnPodnesi.Size = new System.Drawing.Size(121, 23);
+            this.btnPodnesi.Size = new System.Drawing.Size(121, 36);
             this.btnPodnesi.TabIndex = 14;
             this.btnPodnesi.Text = "Podnesi zahtjev";
             this.btnPodnesi.UseVisualStyleBackColor = true;
@@ -117,6 +117,7 @@
             this.Controls.Add(this.dtpZavrsetak);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpPocetak);
+            this.Location = new System.Drawing.Point(344, 106);
             this.Name = "FrmUpdateajZahtjev";
             this.Text = "Update zahtjeva";
             this.Load += new System.EventHandler(this.UpdateajZahtjev_Load);
