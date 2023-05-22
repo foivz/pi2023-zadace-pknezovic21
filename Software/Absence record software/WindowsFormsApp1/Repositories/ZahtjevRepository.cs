@@ -38,7 +38,10 @@ namespace WindowsFormsApp1.Repositories {
             var odgovorni = KorisnikRepository.DohvatiKorisnika(idOdgovornog); 
 
 
-            DateTime vrijemeKreiranja = DateTime.Parse(reader["VrijemeKreiranja"].ToString()); 
+         
+            DateTime vrijemeKreiranja = DateTime.Parse(reader["VrijemeKreiranja"].ToString());
+            DateTime formatiranoVrijeme = Convert.ToDateTime(vrijemeKreiranja.ToString("yyyy-MM-dd hh:mm:ss tt"));
+
 
             DateTime datumPocetka = DateTime.Parse(reader["DatumPocetka"].ToString());
 
@@ -56,7 +59,7 @@ namespace WindowsFormsApp1.Repositories {
 
             var zahtjev = new Zahtjev {
                 IdZahtjeva = id,
-                VrijemeKreiranja = vrijemeKreiranja,
+                VrijemeKreiranja = formatiranoVrijeme,
                 DatumPocetka = datumPocetka,
                 DatumZavrsetka = datumZavrsetka,
                 IdPodnositelja = podnositelj,
@@ -67,5 +70,14 @@ namespace WindowsFormsApp1.Repositories {
 
             return zahtjev;
         }
+
+        public static void KreirajZahtjev(Zahtjev zahtjev) {
+            string sql = $"INSERT INTO Zajev (VrijemeKreiranja, DatumPocetka, DatumZavrsetka, IdPodnositelja, IdOdgovornog, IdVrsteZahtjeva, IdStatusaZahtjeva) " +
+                $"VALUES ('{zahtjev.VrijemeKreiranja}', '{zahtjev.DatumPocetka}', '{zahtjev.DatumZavrsetka}', {zahtjev.IdPodnositelja}, {zahtjev.IdOdgovornog}, {zahtjev.IdVrsteZahtjeva}, {zahtjev.IdStatusaZahtjeva})";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }
