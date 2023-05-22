@@ -81,10 +81,18 @@ namespace WindowsFormsApp1 {
                 IdStatusaZahtjeva = idStatusa
             };
             ZahtjevRepository.KreirajZahtjev(noviZahtjev);
+            Close();
+            VratiPopis();
+
         }
 
 
-
+        private void VratiPopis() {
+            FrmPopisZahtjeva form = new FrmPopisZahtjeva(ulogiraniKorisnik);
+            Hide();
+            form.ShowDialog();
+            Close();
+        }
         private void dtpPocetak_ValueChanged(object sender, EventArgs e) {                
             if (dtpZavrsetak.Value < dtpPocetak.Value) {
                 dtpZavrsetak.Value = dtpPocetak.Value;
@@ -95,6 +103,11 @@ namespace WindowsFormsApp1 {
             if (dtpZavrsetak.Value < dtpPocetak.Value) {
                 dtpZavrsetak.Value = dtpPocetak.Value;
             }
+        }
+
+        private void btnOdustani_Click(object sender, EventArgs e) {
+            Close();
+            VratiPopis();
         }
     }
 }

@@ -58,16 +58,22 @@ namespace WindowsFormsApp1 {
 
 
 
-                tablica.Rows.Add(zahtjev.IdZahtjeva, zahtjev.IdPodnositelja.Ime +" "+ zahtjev.IdPodnositelja.Prezime, zahtjev.VrijemeKreiranja, zahtjev.IdVrsteZahtjeva.Naziv + " od "+ formatiranPocetak+" do "+ formatiranZavrsetak, zahtjev.IdOdgovornog.Ime + " " + zahtjev.IdOdgovornog.Prezime, zahtjev.IdStatusaZahtjeva.Naziv);
+                tablica.Rows.Add(zahtjev.IdZahtjeva+".", zahtjev.IdPodnositelja.Ime +" "+ zahtjev.IdPodnositelja.Prezime, zahtjev.VrijemeKreiranja, zahtjev.IdVrsteZahtjeva.Naziv + " od "+ formatiranPocetak+" do "+ formatiranZavrsetak, zahtjev.IdOdgovornog.Ime + " " + zahtjev.IdOdgovornog.Prezime, zahtjev.IdStatusaZahtjeva.Naziv);
             }
 
             dgvZahtjevi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvZahtjevi.DataSource = tablica;
         }
 
+        private void btnKreiraj_Click(object sender, EventArgs e) {
+            FrmKreirajZahtjev form = new FrmKreirajZahtjev(ulogiraniKorisnik);
+            Hide();
+            form.ShowDialog();
+            Close();
 
+          
+        }
 
-
-
+     
     }
 }
