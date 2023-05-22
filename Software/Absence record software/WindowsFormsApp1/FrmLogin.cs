@@ -16,6 +16,9 @@ namespace WindowsFormsApp1 {
         public static Korisnik ulogiraniKorisnik { get; set; }
         public FrmLogin() {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void btnPrijava_Click(object sender, EventArgs e) {

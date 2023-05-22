@@ -38,12 +38,12 @@
             this.dgvZahtjevi.Location = new System.Drawing.Point(12, 45);
             this.dgvZahtjevi.Name = "dgvZahtjevi";
             this.dgvZahtjevi.RowTemplate.Height = 24;
-            this.dgvZahtjevi.Size = new System.Drawing.Size(1038, 506);
+            this.dgvZahtjevi.Size = new System.Drawing.Size(1090, 536);
             this.dgvZahtjevi.TabIndex = 0;
             // 
             // btnKreiraj
             // 
-            this.btnKreiraj.Location = new System.Drawing.Point(639, 558);
+            this.btnKreiraj.Location = new System.Drawing.Point(691, 587);
             this.btnKreiraj.Name = "btnKreiraj";
             this.btnKreiraj.Size = new System.Drawing.Size(133, 34);
             this.btnKreiraj.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // btnIzbriši
             // 
-            this.btnIzbriši.Location = new System.Drawing.Point(917, 558);
+            this.btnIzbriši.Location = new System.Drawing.Point(969, 587);
             this.btnIzbriši.Name = "btnIzbriši";
             this.btnIzbriši.Size = new System.Drawing.Size(133, 34);
             this.btnIzbriši.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // btnAžuriraj
             // 
-            this.btnAžuriraj.Location = new System.Drawing.Point(778, 557);
+            this.btnAžuriraj.Location = new System.Drawing.Point(830, 587);
             this.btnAžuriraj.Name = "btnAžuriraj";
             this.btnAžuriraj.Size = new System.Drawing.Size(133, 34);
             this.btnAžuriraj.TabIndex = 3;
@@ -86,12 +86,13 @@
             this.txtOpis.Name = "txtOpis";
             this.txtOpis.Size = new System.Drawing.Size(190, 22);
             this.txtOpis.TabIndex = 5;
+            this.txtOpis.TextChanged += new System.EventHandler(this.txtOpis_TextChanged);
             // 
             // FrmPopisZahtjeva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 604);
+            this.ClientSize = new System.Drawing.Size(1143, 633);
             this.Controls.Add(this.txtOpis);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAžuriraj);

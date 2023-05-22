@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WindowsFormsApp1.Models;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WindowsFormsApp1.Repositories {
@@ -131,6 +132,27 @@ namespace WindowsFormsApp1.Repositories {
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+
+        public static List<Zahtjev> PretražiPremaOpisu(string naziv) {
+          
+                List<Zahtjev> zahtjevi = new List<Zahtjev>();
+            string sql = "SELECT z.* FROM Zahtjev z INNER JOIN VrstaZahtjeva v ON z.IdVrsteZahtjeva = v.IdVrsteZahtjeva WHERE v.Naziv like '" + naziv + "%'";
+                DB.OpenConnection();
+
+                var reader = DB.GetDataReader(sql);
+
+                while (reader.Read()) {
+                    Zahtjev zahtjev = CreateObject(reader);
+                    zahtjevi.Add(zahtjev);
+                }
+
+                reader.Close();
+                DB.CloseConnection();
+
+                return zahtjevi;
+            }
+
+        
 
     }
 }
