@@ -62,6 +62,23 @@ namespace WindowsFormsApp1.Repositories {
             return zahtjev;
         }
 
+        public static List<Zahtjev> DohvatiZahtjevePremaManageru(int id) {
+            List<Zahtjev> zahtjevi = new List<Zahtjev>();
+            string sql = $"SELECT * FROM Zahtjev WHERE IdOdgovornog = '{id}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+
+            while (reader.Read()) {
+                Zahtjev zahtjev = CreateObject(reader);
+                zahtjevi.Add(zahtjev);
+            }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return zahtjevi;
+        }
+
         private static Zahtjev CreateObject(SqlDataReader reader) {
             int id = int.Parse(reader["IdZahtjeva"].ToString());
            

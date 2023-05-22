@@ -30,7 +30,10 @@ namespace WindowsFormsApp1 {
         }
 
         private void btnZahtjevi_Click(object sender, EventArgs e) {
-
+            FrmPopisManager forma = new FrmPopisManager(ulogiraniKorisnik);
+            Hide();
+            forma.ShowDialog();
+            Close();
         }
     }
 }
