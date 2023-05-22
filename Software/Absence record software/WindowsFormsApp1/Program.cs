@@ -15,7 +15,7 @@ namespace WindowsFormsApp1 {
             DB.SetConfiguration("IPS23_pknezovic21", "pknezovic21", "kwsFK)Rt");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmLogin());
         }
     }
 }
