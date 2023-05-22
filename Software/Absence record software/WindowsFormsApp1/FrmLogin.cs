@@ -20,7 +20,7 @@ namespace WindowsFormsApp1 {
 
         private void btnPrijava_Click(object sender, EventArgs e) {
             if (txtEmail.Text == "") {
-                MessageBox.Show("Email nije uneseno!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Email nije unesen!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else if (txtLozinka.Text == "") {
                 MessageBox.Show("Lozinka nije unesena!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else {
@@ -28,7 +28,7 @@ namespace WindowsFormsApp1 {
                 ulogiraniKorisnik = KorisnikRepository.DohvatiKorisnika(txtEmail.Text);
                 if (ulogiraniKorisnik != null && ulogiraniKorisnik.Lozinka == txtLozinka.Text) {
                     if(ulogiraniKorisnik.IdUloge == 1) {
-                        FrmManager frm = new FrmManager(ulogiraniKorisnik);
+                        FrmDjelatnik frm = new FrmDjelatnik(ulogiraniKorisnik);
                         Hide();
                         frm.ShowDialog();
                         Close();

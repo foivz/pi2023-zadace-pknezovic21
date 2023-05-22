@@ -50,11 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDjelatnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDjelatnik.Designer.cs">
+      <DependentUpon>FrmDjelatnik.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManager.Designer.cs">
+      <DependentUpon>FrmManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\StatusZahtjeva.cs" />

@@ -14,7 +14,7 @@ namespace WindowsFormsApp1 {
     public partial class KreirajZahtjev : Form {
 
         public Korisnik ulogiraniKorisnik { get; set; }
-        public KreirajZahtjev() {
+        public KreirajZahtjev(Korisnik korisnik) {
             ulogiraniKorisnik = korisnik;
             InitializeComponent();
         }

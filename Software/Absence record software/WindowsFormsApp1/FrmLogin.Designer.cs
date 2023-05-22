@@ -52,21 +52,22 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(114, 29);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.Size = new System.Drawing.Size(127, 22);
             this.txtEmail.TabIndex = 2;
             // 
             // txtLozinka
             // 
             this.txtLozinka.Location = new System.Drawing.Point(114, 75);
             this.txtLozinka.Name = "txtLozinka";
-            this.txtLozinka.Size = new System.Drawing.Size(100, 22);
+            this.txtLozinka.Size = new System.Drawing.Size(127, 22);
             this.txtLozinka.TabIndex = 3;
+            this.txtLozinka.UseSystemPasswordChar = true;
             // 
             // btnPrijava
             // 
             this.btnPrijava.Location = new System.Drawing.Point(262, 160);
             this.btnPrijava.Name = "btnPrijava";
-            this.btnPrijava.Size = new System.Drawing.Size(75, 23);
+            this.btnPrijava.Size = new System.Drawing.Size(86, 31);
             this.btnPrijava.TabIndex = 4;
             this.btnPrijava.Text = "Prijavi se";
             this.btnPrijava.UseVisualStyleBackColor = true;
@@ -76,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 195);
+            this.ClientSize = new System.Drawing.Size(385, 214);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.txtLozinka);
             this.Controls.Add(this.txtEmail);
