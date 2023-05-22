@@ -24,11 +24,33 @@ namespace WindowsFormsApp1 {
         }
 
         private void btnOdbij_Click(object sender, EventArgs e) {
+            var zahtjev = DohvatiZahtjev();
+            ZahtjevRepository.OdbijZahtjev(zahtjev.IdZahtjeva);
+            DohvatiPopisZahtjeva();
+        }
 
+        private Zahtjev DohvatiZahtjev() {
+            if (dgvZahtjevi.SelectedRows.Count > 0) {
+
+                int selektiraniIndex = dgvZahtjevi.SelectedCells[0].RowIndex;
+                DataGridViewRow red = dgvZahtjevi.Rows[selektiraniIndex];
+                int vrijednostIda = (int)red.Cells["Broj zahtjeva"].Value;
+
+                Zahtjev selektirani = ZahtjevRepository.DohvatiZahtjevPremaId(vrijednostIda);
+
+                return selektirani;
+
+           
+            } else {
+                MessageBox.Show("Niste izabrali zahtjev", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null; 
+            }
         }
 
         private void btnOdobri_Click(object sender, EventArgs e) {
-
+            var zahtjev = DohvatiZahtjev();
+            ZahtjevRepository.OdobriZahtjev(zahtjev.IdZahtjeva);
+            DohvatiPopisZahtjeva();
         }
 
         private void FrmPopisManager_Load(object sender, EventArgs e) {

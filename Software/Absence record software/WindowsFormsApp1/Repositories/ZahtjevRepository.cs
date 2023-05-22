@@ -169,7 +169,21 @@ namespace WindowsFormsApp1.Repositories {
                 return zahtjevi;
             }
 
-        
+        public static void OdbijZahtjev(int id) {
+            string sql = $"Update Zahtjev SET IdStatusaZahtjeva = 3 WHERE IdZahtjeva = '{id}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
+
+        public static void OdobriZahtjev(int id) {
+            string sql = $"Update Zahtjev SET IdStatusaZahtjeva = 2 WHERE IdZahtjeva = '{id}'";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
 
     }
 }
