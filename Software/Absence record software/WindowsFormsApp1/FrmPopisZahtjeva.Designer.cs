@@ -66,6 +66,7 @@
             this.btnAžuriraj.TabIndex = 3;
             this.btnAžuriraj.Text = "Ažuriraj zahtjev";
             this.btnAžuriraj.UseVisualStyleBackColor = true;
+            this.btnAžuriraj.Click += new System.EventHandler(this.btnAžuriraj_Click);
             // 
             // FrmPopisZahtjeva
             // 

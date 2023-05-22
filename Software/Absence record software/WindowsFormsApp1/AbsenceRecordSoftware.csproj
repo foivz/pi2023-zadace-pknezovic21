@@ -92,6 +92,12 @@
     <Compile Include="FrmKreirajZahtjev.Designer.cs">
       <DependentUpon>FrmKreirajZahtjev.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUpdateajZahtjev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdateajZahtjev.Designer.cs">
+      <DependentUpon>FrmUpdateajZahtjev.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmDjelatnik.resx">
       <DependentUpon>FrmDjelatnik.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="FrmKreirajZahtjev.resx">
       <DependentUpon>FrmKreirajZahtjev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdateajZahtjev.resx">
+      <DependentUpon>FrmUpdateajZahtjev.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

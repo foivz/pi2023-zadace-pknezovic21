@@ -31,10 +31,10 @@ namespace WindowsFormsApp1 {
 
 
         private void OsvjeziZahtjeve() {
-            
+
             var zahtjevi = ZahtjevRepository.DohvatiZahtjevePremaKorisniku(ulogiraniKorisnik.IdKorisnika);
 
-       
+
             DataTable tablica = new DataTable();
 
 
@@ -45,7 +45,8 @@ namespace WindowsFormsApp1 {
             tablica.Columns.Add("Odgovorna osoba", typeof(string));
             tablica.Columns.Add("Status zahtjeva", typeof(string));
 
-           
+
+
             foreach (Zahtjev zahtjev in zahtjevi) {
                 string datumPocetka = zahtjev.DatumPocetka;
                 DateTime parsiraniDatum = DateTime.ParseExact(datumPocetka, "yyyy-MM-dd", CultureInfo.InvariantCulture);
@@ -56,12 +57,13 @@ namespace WindowsFormsApp1 {
                 string formatiranZavrsetak = parsiraniZavrsetak.ToString("dd.MM.yyyy");
 
 
+                //
 
-
-                tablica.Rows.Add(zahtjev.IdZahtjeva+".", zahtjev.IdPodnositelja.Ime +" "+ zahtjev.IdPodnositelja.Prezime, zahtjev.VrijemeKreiranja, zahtjev.IdVrsteZahtjeva.Naziv + " od "+ formatiranPocetak+" do "+ formatiranZavrsetak, zahtjev.IdOdgovornog.Ime + " " + zahtjev.IdOdgovornog.Prezime, zahtjev.IdStatusaZahtjeva.Naziv);
+                tablica.Rows.Add(zahtjev.IdZahtjeva, zahtjev.IdPodnositelja.Ime + " " + zahtjev.IdPodnositelja.Prezime, zahtjev.VrijemeKreiranja, zahtjev.IdVrsteZahtjeva.Naziv + " od " + formatiranPocetak + " do " + formatiranZavrsetak, zahtjev.IdOdgovornog.Ime + " " + zahtjev.IdOdgovornog.Prezime, zahtjev.IdStatusaZahtjeva.Naziv);
             }
 
             dgvZahtjevi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+
             dgvZahtjevi.DataSource = tablica;
         }
 
@@ -71,9 +73,24 @@ namespace WindowsFormsApp1 {
             form.ShowDialog();
             Close();
 
-          
+
         }
 
-     
+        private void btnAžuriraj_Click(object sender, EventArgs e) {
+            if (dgvZahtjevi.SelectedRows.Count > 0) {
+      
+                int selektiraniIndex= dgvZahtjevi.SelectedCells[0].RowIndex;
+                DataGridViewRow red= dgvZahtjevi.Rows[selektiraniIndex];
+                int vrijednostIda = (int)red.Cells["Broj zahtjeva"].Value;
+
+
+                FrmUpdateajZahtjev forma = new FrmUpdateajZahtjev(ulogiraniKorisnik, vrijednostIda);
+                Hide();
+                forma.ShowDialog();
+                Close();
+            } else {
+                MessageBox.Show("Niste izabrali zahtjev", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

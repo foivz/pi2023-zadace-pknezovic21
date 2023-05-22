@@ -46,6 +46,21 @@ namespace WindowsFormsApp1.Repositories {
             return zahtjevi;
         }
 
+        public static Zahtjev DohvatiZahtjevPremaId(int id) {
+         
+            string sql = $"SELECT * FROM Zahtjev WHERE IdZahtjeva = '{id}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            Zahtjev zahtjev = null;
+            if (reader.HasRows == true) {
+                reader.Read();
+                zahtjev = CreateObject(reader);
+                reader.Close();
+            }
+       
+            return zahtjev;
+        }
+
         private static Zahtjev CreateObject(SqlDataReader reader) {
             int id = int.Parse(reader["IdZahtjeva"].ToString());
            
@@ -81,8 +96,6 @@ namespace WindowsFormsApp1.Repositories {
 
 
 
-
-
             var zahtjev = new Zahtjev {
                 IdZahtjeva = id,
                 VrijemeKreiranja = formatiranoVrijemeKreiranja,
@@ -100,6 +113,13 @@ namespace WindowsFormsApp1.Repositories {
         public static void KreirajZahtjev(Zahtjev zahtjev) {
             string sql = $"INSERT INTO Zahtjev (VrijemeKreiranja, DatumPocetka, DatumZavrsetka, IdPodnositelja, IdOdgovornog, IdVrsteZahtjeva, IdStatusaZahtjeva) " +
                 $"VALUES ('{zahtjev.VrijemeKreiranja}', '{zahtjev.DatumPocetka}', '{zahtjev.DatumZavrsetka}', {zahtjev.IdPodnositelja.IdKorisnika}, {zahtjev.IdOdgovornog.IdKorisnika}, {zahtjev.IdVrsteZahtjeva.IdVrsteZahtjeva}, {zahtjev.IdStatusaZahtjeva.IdStatusaZahtjeva})";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
+        public static void UpdateajZahtjev(Zahtjev zahtjev) {
+            string sql = $"Update Zahtjev SET VrijemeKreiranja = '{zahtjev.VrijemeKreiranja}',DatumPocetka = '{zahtjev.DatumPocetka}', DatumZavrsetka = '{zahtjev.DatumZavrsetka}', IdVrsteZahtjeva = '{zahtjev.IdVrsteZahtjeva.IdVrsteZahtjeva}', IdStatusaZahtjeva = '{zahtjev.IdStatusaZahtjeva.IdStatusaZahtjeva}' WHERE IdZahtjeva = '{zahtjev.IdZahtjeva}'";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();

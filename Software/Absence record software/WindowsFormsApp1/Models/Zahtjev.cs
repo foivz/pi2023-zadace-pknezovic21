@@ -15,5 +15,6 @@ namespace WindowsFormsApp1.Models {
         public VrstaZahtjeva IdVrsteZahtjeva { get; set; }
         public StatusZahtjeva IdStatusaZahtjeva { get; set; }
 
+       
     }
 }
