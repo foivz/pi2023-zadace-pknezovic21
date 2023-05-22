@@ -80,16 +80,17 @@ namespace WindowsFormsApp1 {
 
         private void btnAžuriraj_Click(object sender, EventArgs e) {
             if (dgvZahtjevi.SelectedRows.Count > 0) {
-      
-                int selektiraniIndex= dgvZahtjevi.SelectedCells[0].RowIndex;
-                DataGridViewRow red= dgvZahtjevi.Rows[selektiraniIndex];
-                int vrijednostIda = (int)red.Cells["Broj zahtjeva"].Value;
-
-
-                FrmUpdateajZahtjev forma = new FrmUpdateajZahtjev(ulogiraniKorisnik, vrijednostIda);
-                Hide();
-                forma.ShowDialog();
-                Close();
+                int selektiraniIndex = dgvZahtjevi.SelectedCells[0].RowIndex;
+                DataGridViewRow red = dgvZahtjevi.Rows[selektiraniIndex];
+                int vrijednostIda;
+                if (red.Cells["Broj zahtjeva"].Value != null && int.TryParse(red.Cells["Broj zahtjeva"].Value.ToString(), out vrijednostIda)) {
+                    FrmUpdateajZahtjev forma = new FrmUpdateajZahtjev(ulogiraniKorisnik, vrijednostIda);
+                    Hide();
+                    forma.ShowDialog();
+                    Close();
+                } else {
+                    MessageBox.Show("Došlo je do pogreške", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             } else {
                 MessageBox.Show("Niste izabrali zahtjev", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -97,21 +98,26 @@ namespace WindowsFormsApp1 {
 
         private void btnIzbriši_Click(object sender, EventArgs e) {
             if (dgvZahtjevi.SelectedRows.Count > 0) {
-
                 int selektiraniIndex = dgvZahtjevi.SelectedCells[0].RowIndex;
                 DataGridViewRow red = dgvZahtjevi.Rows[selektiraniIndex];
-                int vrijednostIda = (int)red.Cells["Broj zahtjeva"].Value;
-                var izabraniZahtjev = ZahtjevRepository.DohvatiZahtjevPremaId(vrijednostIda);
-                if(izabraniZahtjev != null) {
-                    ZahtjevRepository.ObrišiZahtjev(izabraniZahtjev);
+                int? vrijednostIda = red.Cells["Broj zahtjeva"]?.Value as int?;
+                if (vrijednostIda != null) {
+                    var izabraniZahtjev = ZahtjevRepository.DohvatiZahtjevPremaId(vrijednostIda.Value);
+                    if (izabraniZahtjev != null) {
+                        ZahtjevRepository.ObrišiZahtjev(izabraniZahtjev);
+                    } else {
+                        MessageBox.Show("Došlo je do pogreške", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 } else {
-                    MessageBox.Show("Došlo je do pogreške", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Došlo je do pogreške", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             } else {
                 MessageBox.Show("Niste izabrali zahtjev", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             OsvjeziZahtjeve();
         }
+
+
 
         private void txtOpis_TextChanged(object sender, EventArgs e) {
             
