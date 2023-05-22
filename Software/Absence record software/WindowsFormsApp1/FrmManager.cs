@@ -16,6 +16,21 @@ namespace WindowsFormsApp1 {
         public FrmManager(Korisnik korisnik) {
             InitializeComponent();
             ulogiraniKorisnik = korisnik;
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+        }
+
+        private void btnOdjava_Click(object sender, EventArgs e) {
+            FrmLogin frmPrijava = new FrmLogin();
+            Hide();
+            frmPrijava.ShowDialog();
+            Close();
+        }
+
+        private void btnZahtjevi_Click(object sender, EventArgs e) {
+
         }
     }
 }
