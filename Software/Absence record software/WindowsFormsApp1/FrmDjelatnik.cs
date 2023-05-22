@@ -16,5 +16,20 @@ namespace WindowsFormsApp1 {
             InitializeComponent();
             ulogiraniKorisnik = korisnik;
         }
+
+        private void btnKreiraj_Click(object sender, EventArgs e) {
+            FrmKreirajZahtjev form = new FrmKreirajZahtjev(ulogiraniKorisnik);
+            Hide();
+            form.ShowDialog();
+            Close();
+           
+        }
+
+        private void btnZahtjevi_Click(object sender, EventArgs e) {
+            FrmPopisZahtjeva form = new FrmPopisZahtjeva(ulogiraniKorisnik);
+            Hide();
+            form.ShowDialog();
+            Close();
+        }
     }
 }

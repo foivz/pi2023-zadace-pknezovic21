@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +12,16 @@ using WindowsFormsApp1.Models;
 using WindowsFormsApp1.Repositories;
 
 namespace WindowsFormsApp1 {
-    public partial class KreirajZahtjev : Form {
+    public partial class FrmKreirajZahtjev : Form {
 
         public Korisnik ulogiraniKorisnik { get; set; }
-        public KreirajZahtjev(Korisnik korisnik) {
+        public FrmKreirajZahtjev(Korisnik korisnik) {
             ulogiraniKorisnik = korisnik;
             InitializeComponent();
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void testna_Load(object sender, EventArgs e) {
@@ -41,30 +46,44 @@ namespace WindowsFormsApp1 {
             KreirajNoviZahtjev();
         }
 
+
+
         private void KreirajNoviZahtjev() {
-            var datumPocetka = dtpPocetak.Value;
-            var datumZavrsetka = dtpZavrsetak.Value;
+
+         
+
+            DateTime vrijemePocetka = dtpPocetak.Value;
+            string formatiranoVrijemePocetka = vrijemePocetka.ToString("yyyy-MM-dd");
+
+
+
+            DateTime vrijemeZavrsetka = dtpZavrsetak.Value;
+            string formatiranoVrijemeZavrsetak = vrijemeZavrsetka.ToString("yyyy-MM-dd");
+     
+
             var idPodnositelja = ulogiraniKorisnik;
             var idOdgovornog = KorisnikRepository.DohvatiKorisnika(2);
-            var idStatusa  = StatusZahtjevaRepository.DohvatiStatus(1);
+            var idStatusa = StatusZahtjevaRepository.DohvatiStatus(1);
             Console.WriteLine(cmbVrsta.SelectedValue);
             var idVrste = cmbVrsta.SelectedValue as VrstaZahtjeva;
-            if(idVrste.IdVrsteZahtjeva == 5) {
+            if (idVrste.IdVrsteZahtjeva == 5) {
                 idStatusa = StatusZahtjevaRepository.DohvatiStatus(2);
-            } 
-
+            }
+            DateTime vrijemeKreiranja = DateTime.Now;
+            string formatiranoVrijemeKreiranja = vrijemeKreiranja.ToString("yyyy-MM-dd");
             Zahtjev noviZahtjev = new Zahtjev {
-                VrijemeKreiranja = DateTime.UtcNow,
-                DatumPocetka = datumPocetka,
-                DatumZavrsetka = datumZavrsetka,
+                VrijemeKreiranja = formatiranoVrijemeKreiranja,
+                DatumPocetka = formatiranoVrijemePocetka,
+                DatumZavrsetka = formatiranoVrijemeZavrsetak,
                 IdPodnositelja = idPodnositelja,
                 IdOdgovornog = idOdgovornog,
                 IdVrsteZahtjeva = idVrste,
                 IdStatusaZahtjeva = idStatusa
-
             };
             ZahtjevRepository.KreirajZahtjev(noviZahtjev);
         }
+
+
 
         private void dtpPocetak_ValueChanged(object sender, EventArgs e) {                
             if (dtpZavrsetak.Value < dtpPocetak.Value) {

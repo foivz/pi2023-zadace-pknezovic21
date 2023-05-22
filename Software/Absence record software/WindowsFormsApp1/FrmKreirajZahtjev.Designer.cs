@@ -1,5 +1,5 @@
 ﻿namespace WindowsFormsApp1 {
-    partial class KreirajZahtjev {
+    partial class FrmKreirajZahtjev {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -30,6 +30,7 @@
             this.cmbVrsta = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnPodnesi = new System.Windows.Forms.Button();
+            this.btnOdustani = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpPocetak
@@ -93,11 +94,21 @@
             this.btnPodnesi.UseVisualStyleBackColor = true;
             this.btnPodnesi.Click += new System.EventHandler(this.btnPodnesi_Click);
             // 
-            // KreirajZahtjev
+            // btnOdustani
+            // 
+            this.btnOdustani.Location = new System.Drawing.Point(344, 110);
+            this.btnOdustani.Name = "btnOdustani";
+            this.btnOdustani.Size = new System.Drawing.Size(121, 23);
+            this.btnOdustani.TabIndex = 7;
+            this.btnOdustani.Text = "Odustani";
+            this.btnOdustani.UseVisualStyleBackColor = true;
+            // 
+            // FrmKreirajZahtjev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 145);
+            this.Controls.Add(this.btnOdustani);
             this.Controls.Add(this.btnPodnesi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbVrsta);
@@ -105,8 +116,8 @@
             this.Controls.Add(this.dtpZavrsetak);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpPocetak);
-            this.Name = "KreirajZahtjev";
-            this.Text = "testna";
+            this.Name = "FrmKreirajZahtjev";
+            this.Text = "Kreiraj novi zahtjev";
             this.Load += new System.EventHandler(this.testna_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -122,5 +133,6 @@
         private System.Windows.Forms.ComboBox cmbVrsta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnPodnesi;
+        private System.Windows.Forms.Button btnOdustani;
     }
 }
