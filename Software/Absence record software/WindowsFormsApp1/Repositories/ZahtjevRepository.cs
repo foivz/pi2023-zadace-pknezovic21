@@ -150,24 +150,26 @@ namespace WindowsFormsApp1.Repositories {
             DB.CloseConnection();
         }
 
-        public static List<Zahtjev> PretražiPremaOpisu(string naziv) {
-          
-                List<Zahtjev> zahtjevi = new List<Zahtjev>();
-            string sql = "SELECT z.* FROM Zahtjev z INNER JOIN VrstaZahtjeva v ON z.IdVrsteZahtjeva = v.IdVrsteZahtjeva WHERE v.Naziv like '" + naziv + "%'";
-                DB.OpenConnection();
+        public static List<Zahtjev> PretražiPremaOpisu(string naziv, int idKorisnika)
+        {
 
-                var reader = DB.GetDataReader(sql);
+            List<Zahtjev> zahtjevi = new List<Zahtjev>();
+            string sql = "SELECT z.* FROM Zahtjev z INNER JOIN VrstaZahtjeva v ON z.IdVrsteZahtjeva = v.IdVrsteZahtjeva WHERE v.Naziv like '" + naziv + "%' AND z.IdPodnositelja = '" + idKorisnika + "'";
+            DB.OpenConnection();
 
-                while (reader.Read()) {
-                    Zahtjev zahtjev = CreateObject(reader);
-                    zahtjevi.Add(zahtjev);
-                }
+            var reader = DB.GetDataReader(sql);
 
-                reader.Close();
-                DB.CloseConnection();
-
-                return zahtjevi;
+            while (reader.Read())
+            {
+                Zahtjev zahtjev = CreateObject(reader);
+                zahtjevi.Add(zahtjev);
             }
+
+            reader.Close();
+            DB.CloseConnection();
+
+            return zahtjevi;
+        }
 
         public static void OdbijZahtjev(int id) {
             string sql = $"Update Zahtjev SET IdStatusaZahtjeva = 3 WHERE IdZahtjeva = '{id}'";

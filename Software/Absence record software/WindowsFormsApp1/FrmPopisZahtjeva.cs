@@ -124,8 +124,9 @@ namespace WindowsFormsApp1 {
             OsvjeziZahtjeveOpis();
            }
 
-        private void OsvjeziZahtjeveOpis() {
-            var zahtjevi = ZahtjevRepository.PretražiPremaOpisu(txtOpis.Text);
+        private void OsvjeziZahtjeveOpis()
+        {
+            var zahtjevi = ZahtjevRepository.PretražiPremaOpisu(txtOpis.Text, ulogiraniKorisnik.IdKorisnika);
             DataTable tablica = new DataTable();
 
 
@@ -138,7 +139,8 @@ namespace WindowsFormsApp1 {
 
 
 
-            foreach (Zahtjev zahtjev in zahtjevi) {
+            foreach (Zahtjev zahtjev in zahtjevi)
+            {
                 string datumPocetka = zahtjev.DatumPocetka;
                 DateTime parsiraniDatum = DateTime.ParseExact(datumPocetka, "yyyy-MM-dd", CultureInfo.InvariantCulture);
                 string formatiranPocetak = parsiraniDatum.ToString("dd.MM.yyyy");
@@ -148,7 +150,7 @@ namespace WindowsFormsApp1 {
                 string formatiranZavrsetak = parsiraniZavrsetak.ToString("dd.MM.yyyy");
 
 
-           
+
 
                 tablica.Rows.Add(zahtjev.IdZahtjeva, zahtjev.IdPodnositelja.Ime + " " + zahtjev.IdPodnositelja.Prezime, zahtjev.VrijemeKreiranja, zahtjev.IdVrsteZahtjeva.Naziv + " od " + formatiranPocetak + " do " + formatiranZavrsetak, zahtjev.IdOdgovornog.Ime + " " + zahtjev.IdOdgovornog.Prezime, zahtjev.IdStatusaZahtjeva.Naziv);
             }
