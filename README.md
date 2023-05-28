@@ -16,9 +16,7 @@ Potrebno je izraditi odgovarajući softwer koji će radnicima spomenute IT kompa
 slobodnim danima te službenim putovanjima. Softwer će olakšati evidenciju prisustva i odsustva djelatnika unutar IT kompanije.
 
 ## Specifikacija projekta
-Projekt mora sadržavati minimalno 8 funkcionalnih zahtjeva.Unutar tih 8 zahtjeva također mora sadržavati minimalno 1 zahtjev u domeni prikaza dohvaćenih podataka, 
-1 zahtjev u domeni unosa podataka, 1 zahtjev u domeni izrade izvještaja te 1 zahtjev u domeni prikaza statističkih podataka. Projekt također mora sadržavati 2
-nefunkcionalna zahtjeva.Unutar ta 2 nefunkcionalna zahtjeva mora se nalaziti minimalno 1 zahtjev u domeni izgleda softvera i 1 zahtjev u bilo kojoj drugoj domeni.
+Potrebno je na osnovu prijašnje 2 zadaće napraviti programsko rješenje use casea u domeni rada s podacima. Potrebne izmjene nad ERA modelom za ostvarenje ovog rješenja su vidljive na 3. stranici github wiki i na 2. zadaći na dnu stranice ispod prvotnog ERA modela
 
 ## Zadatak
 https://github.com/foivz/pi2023-zadace-pknezovic21/blob/master/Zadatak%20-%20Kadrovska.pdf
