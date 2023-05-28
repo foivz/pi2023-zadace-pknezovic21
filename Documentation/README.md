@@ -67,3 +67,9 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 ![osmi_c](https://user-images.githubusercontent.com/126589852/226219558-755cd224-0b08-4ba4-a8f1-07739b2ef315.png)
 
 
+![era-pravi](https://github.com/foivz/pi2023-zadace-pknezovic21/assets/126589852/de1f40a0-c8da-4ff9-9707-89b601cf4ae4)
+
+
+
+
+
