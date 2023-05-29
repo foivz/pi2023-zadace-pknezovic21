@@ -16,7 +16,7 @@ Potrebno je izraditi odgovarajući softwer koji će radnicima spomenute IT kompa
 slobodnim danima te službenim putovanjima. Softwer će olakšati evidenciju prisustva i odsustva djelatnika unutar IT kompanije.
 
 ## Specifikacija projekta
-Potrebno je na osnovu prijašnje 2 zadaće napraviti programsko rješenje use casea u domeni rada s podacima. Potrebne izmjene nad ERA modelom za ostvarenje ovog rješenja su vidljive na  2.zadaći na dnu stranice ispod prvotnog ERA modela.
+Potrebno je na osnovu prijašnje 2 zadaće napraviti programsko rješenje use casea u domeni rada s podacima. Potrebne izmjene nad ERA modelom za ostvarenje ovog rješenja su vidljive na 2. zadaći na dnu stranice ispod prvotnog ERA modela. Podaci za prijavu u programsko rješenje su ispisani na formu login ispod polja za unos podataka.
 
 ## Zadatak
 https://github.com/foivz/pi2023-zadace-pknezovic21/blob/master/Zadatak%20-%20Kadrovska.pdf
